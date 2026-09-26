@@ -28,7 +28,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/alefdias/Velix-Local/releases/download/v1.0.16/velix-local-linux-x64.tar.gz
-        sha256: 47edbe8038623af49045ea67cede42ea89065b241c4b0574aaa84a7fcc592394
+        sha256: ed11f65a0b34a6a159ba723738955e84d0b568f215ae9644758bd4126b9d9b6a
       - type: file
         path: io.github.alefdias.VelixLocal.desktop
       - type: file
