@@ -4,6 +4,9 @@ runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: velix-local
 
+only-arches:
+  - x86_64
+
 finish-args:
   - --share=network
   - --share=ipc
@@ -18,7 +21,7 @@ modules:
   - name: velix-local
     buildsystem: simple
     build-commands:
-      - install -d /app/bin /app/lib /app/share/applications /app/share/metainfo /app/share/icons/hicolor/192x192/apps
+      - install -d /app/bin /app/lib/velix-local /app/share/applications /app/share/metainfo /app/share/icons/hicolor/192x192/apps
       - cp -r * /app/lib/velix-local/
       - ln -sf /app/lib/velix-local/velix-local /app/bin/velix-local
       - install -Dm644 io.github.alefdias.VelixLocal.desktop /app/share/applications/io.github.alefdias.VelixLocal.desktop
@@ -26,8 +29,8 @@ modules:
       - install -Dm644 io.github.alefdias.VelixLocal.png /app/share/icons/hicolor/192x192/apps/io.github.alefdias.VelixLocal.png
     sources:
       - type: archive
-        url: https://github.com/alefdias/Velix-Local/releases/download/v1.0.15/velix-local-linux-x64.tar.gz
-        sha256: fd801358a590db3d3188a34118f7c1476b7d95f6cb11f44f470c1a011db8e9ac
+        url: https://github.com/alefdias/Velix-Local/releases/download/v1.0.16/velix-local-linux-x64.tar.gz
+        sha256: 47edbe8038623af49045ea67cede42ea89065b241c4b0574aaa84a7fcc592394
       - type: file
         path: io.github.alefdias.VelixLocal.desktop
       - type: file

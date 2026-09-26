@@ -15,13 +15,13 @@
     </p>
     <p>Principais recursos:</p>
     <ul>
+      <li>Suporte multilíngue com 12 idiomas globais (Português, Inglês, Espanhol, Francês, Alemão, Italiano, Russo, Chinês, Japonês, Coreano, Árabe e Hindi)</li>
       <li>Transferência com velocidade máxima gigabit sem depender de internet</li>
       <li>Conexão direta e instantânea com detecção automática de rede mDNS</li>
       <li>Tirar fotos com a câmera e enviar diretamente para qualquer dispositivo conectado</li>
       <li>Notificações com alerta sonoro quando arquivos chegam</li>
       <li>Velix Sync: sincronização contínua e bidirecional de pastas locais</li>
       <li>Retomada inteligente de transferência por blocos (Chunking)</li>
-      <li>Velix Deploy: distribuição e instalação corporativa remota</li>
       <li>Total privacidade: seus arquivos nunca saem da sua rede local</li>
     </ul>
   </description>
@@ -50,6 +50,18 @@
   </provides>
 
   <releases>
+    <release version="1.0.16" date="2026-09-25">
+      <description>
+        <p>Versão 1.0.16:</p>
+        <ul>
+          <li>Internacionalização com suporte a 12 idiomas mundiais</li>
+          <li>Detecção automática de idioma do sistema e seletor manual</li>
+          <li>Correção de diretório de instalação no Flatpak</li>
+          <li>Captura e envio de fotos pela câmera integrada</li>
+          <li>Alertas sonoros e notificações de transferência</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.0.15" date="2026-09-25">
       <description>
         <p>Versão 1.0.15:</p>
