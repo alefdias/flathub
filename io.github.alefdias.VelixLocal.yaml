@@ -20,12 +20,13 @@ modules:
       - x86_64
     buildsystem: simple
     build-commands:
-      - install -d /app/bin /app/lib/velix-local /app/share/applications /app/share/metainfo /app/share/icons/hicolor/192x192/apps
+      - install -d /app/bin /app/lib/velix-local /app/share/applications /app/share/metainfo /app/share/icons/hicolor/256x256/apps /app/share/icons/hicolor/128x128/apps
       - cp -r * /app/lib/velix-local/
       - ln -sf /app/lib/velix-local/velix-local /app/bin/velix-local
       - install -Dm644 io.github.alefdias.VelixLocal.desktop /app/share/applications/io.github.alefdias.VelixLocal.desktop
       - install -Dm644 io.github.alefdias.VelixLocal.metainfo.xml /app/share/metainfo/io.github.alefdias.VelixLocal.metainfo.xml
-      - install -Dm644 io.github.alefdias.VelixLocal.png /app/share/icons/hicolor/192x192/apps/io.github.alefdias.VelixLocal.png
+      - install -Dm644 io.github.alefdias.VelixLocal.png /app/share/icons/hicolor/256x256/apps/io.github.alefdias.VelixLocal.png
+      - install -Dm644 io.github.alefdias.VelixLocal-128.png /app/share/icons/hicolor/128x128/apps/io.github.alefdias.VelixLocal.png
     sources:
       - type: archive
         url: https://github.com/alefdias/Velix-Local/releases/download/v1.0.16/velix-local-linux-x64.tar.gz
@@ -36,3 +37,5 @@ modules:
         path: io.github.alefdias.VelixLocal.metainfo.xml
       - type: file
         path: io.github.alefdias.VelixLocal.png
+      - type: file
+        path: io.github.alefdias.VelixLocal-128.png
