@@ -4,9 +4,6 @@ runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: velix-local
 
-only-arches:
-  - x86_64
-
 finish-args:
   - --share=network
   - --share=ipc
@@ -19,6 +16,8 @@ finish-args:
 
 modules:
   - name: velix-local
+    only-arches:
+      - x86_64
     buildsystem: simple
     build-commands:
       - install -d /app/bin /app/lib/velix-local /app/share/applications /app/share/metainfo /app/share/icons/hicolor/192x192/apps
