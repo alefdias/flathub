@@ -5,6 +5,9 @@
   <project_license>MIT</project_license>
   <name>Velix Local</name>
   <summary>Compartilhamento e sincronização ultra-rápida de arquivos na rede local</summary>
+  <developer id="io.github.alefdias">
+    <name>Alef Dias</name>
+  </developer>
 
   <description>
     <p>
@@ -13,7 +16,9 @@
     <p>Principais recursos:</p>
     <ul>
       <li>Transferência com velocidade máxima gigabit sem depender de internet</li>
-      <li>Conexão direta sem códigos PIN ou burocracia</li>
+      <li>Conexão direta e instantânea com detecção automática de rede mDNS</li>
+      <li>Tirar fotos com a câmera e enviar diretamente para qualquer dispositivo conectado</li>
+      <li>Notificações com alerta sonoro quando arquivos chegam</li>
       <li>Velix Sync: sincronização contínua e bidirecional de pastas locais</li>
       <li>Retomada inteligente de transferência por blocos (Chunking)</li>
       <li>Velix Deploy: distribuição e instalação corporativa remota</li>
@@ -45,9 +50,21 @@
   </provides>
 
   <releases>
+    <release version="1.0.15" date="2026-09-25">
+      <description>
+        <p>Versão 1.0.15:</p>
+        <ul>
+          <li>Captura e envio direto de fotos pela câmera integrada</li>
+          <li>Notificações do sistema com som e alerta ao receber arquivos</li>
+          <li>Layout responsivo do histórico mobile com suporte a nomes longos</li>
+          <li>Resolução de links entre sistemas de arquivos no Linux</li>
+          <li>Persistência e sincronização em tempo real de transferências no SQLite</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.0.8" date="2026-09-25">
       <description>
-        <p>Versão oficial 1.0.8:</p>
+        <p>Versão inicial 1.0.8:</p>
         <ul>
           <li>Abertura direta de arquivos e pastas com um único clique</li>
           <li>Suporte a downloads públicos no Android</li>

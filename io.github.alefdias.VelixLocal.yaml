@@ -9,6 +9,7 @@ finish-args:
   - --share=ipc
   - --socket=fallback-x11
   - --socket=wayland
+  - --socket=pulseaudio
   - --device=dri
   - --filesystem=xdg-download
   - --filesystem=home:ro
@@ -26,8 +27,8 @@ modules:
       - install -Dm644 io.github.alefdias.VelixLocal.png /app/share/icons/hicolor/192x192/apps/io.github.alefdias.VelixLocal.png
     sources:
       - type: archive
-        url: https://github.com/alefdias/Velix-Local/releases/download/v1.0.8/velix-local-linux-x64.tar.gz
-        sha256: eb2dff12ad6d8cf932bc5725a136a64014f4efb54549a6153d2459978ff2fd60
+        url: https://github.com/alefdias/Velix-Local/releases/download/v1.0.15/velix-local-linux-x64.tar.gz
+        sha256: fd801358a590db3d3188a34118f7c1476b7d95f6cb11f44f470c1a011db8e9ac
       - type: file
         path: io.github.alefdias.VelixLocal.desktop
       - type: file
